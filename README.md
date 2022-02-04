@@ -1,4 +1,21 @@
 # map-reduce-nikhil-pannala
+## Data Description
+[Data Link](https://www.kaggle.com/doaaalsenani/usa-cers-dataset/version/1)
+
+The dataset contains the following columns:
+- index
+- price
+- brand
+- model
+- year
+- title_status
+- mileage
+- color
+- vin
+- lot
+- state
+- country
+- time
 ## Data Story:
 
 I found the Kaggle USA Cars dataset regarding car sales of different brands interesting. I wanted to know different car brands that were on sale in United States of America. 
