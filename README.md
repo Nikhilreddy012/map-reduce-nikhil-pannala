@@ -1,20 +1,18 @@
 # map-reduce-nikhil-pannala
-## Data Description:
-[Dataset link](https://www.kaggle.com/doaaalsenani/usa-cers-dataset/version/1)
+## Data Story:
 
-In this dataset there are 12 features that describe vehicles with different brands and a variety of models for sale in different states in United States of America.
+I found the Kaggle USA Cars dataset regarding car sales of different brands interesting. I wanted to know different car brands that were on sale in United States of America. 
 
-This data frame contains the following columns:
-- index
-- price
-- brand
-- model
-- year
-- title_status
-- mileage
-- color
-- vin
-- lot
-- state
-- country
-- time
+From the initial dataset, I'll map to key-value pairs: brand, count. 
+Then, I'll use the terminal "sort" to get them sorted in case they aren't. 
+Then, I'll reduce all the key-value pairs for one brand to a single value: brand, count. 
+
+```PowerShell
+cat USA_cars_datasets.csv | python datamapper.py | sort  | python datareducer.py > pannala-output.txt
+
+```
+
+The result is only 29 records, so I'll use Excel to chart it. 
+Then I'll filter the data and find the top ten car brands that are on sale in United States of America.
+
+![Top Ten Car Brands Chart](TopTenBrandsJPG.JPG)
